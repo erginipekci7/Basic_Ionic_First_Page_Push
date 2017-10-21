@@ -6,11 +6,16 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-
+/* Ekledigimiz sayfayi(FirstPage) import ediyoruz */ 
+import { FirstPage } from '../pages/first/first';
+/*
+  Ekledigimiz sayfa ismini (FirstPage), @NgModule ve entryComponents 'e ekliyoruz
+*/
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    FirstPage
   ],
   imports: [
     BrowserModule,
@@ -19,7 +24,8 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    FirstPage
   ],
   providers: [
     StatusBar,
